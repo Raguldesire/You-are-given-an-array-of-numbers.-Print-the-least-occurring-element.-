@@ -1,0 +1,12 @@
+n=int(input())
+l=list(map(int,input().split()))
+l.sort()
+m=[]
+p=[]
+for i in l:
+  if l.count(i)>1:
+    m.append(i)
+  else:
+    p.append(i)
+p.sort(reverse=True)
+print(*p)
